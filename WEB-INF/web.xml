@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-class>com.servlet.login</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <servlet-name>exit</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-class>com.servlet.exit</servlet-class>
+  </servlet>
+  
+	<servlet>
+		<servlet-name>roomtable1</servlet-name>
+		<servlet-class>com.servlet.roomtable1</servlet-class>
+	</servlet>
+  
+  	<servlet>
+		<servlet-name>roomtable</servlet-name>
+		<servlet-class>com.servlet.roomtable</servlet-class>
+	</servlet>
+  
+	<servlet>
+		<servlet-name>inport</servlet-name>
+		<servlet-class>com.servlet.inport</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>export</servlet-name>
+		<servlet-class>com.servlet.export</servlet-class>
+	</servlet>
+  
+  <servlet-mapping>
+    <servlet-name>exit</servlet-name>
+    <url-pattern>/servlet/exit</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/servlet/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>roomtable1</servlet-name>
+    <url-pattern>/servlet/roomtable1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>roomtable</servlet-name>
+    <url-pattern>/servlet/roomtable</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>inport</servlet-name>
+    <url-pattern>/servlet/inport</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>export</servlet-name>
+    <url-pattern>/servlet/export</url-pattern>
+  </servlet-mapping>
+  
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
